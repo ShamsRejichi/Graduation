@@ -1,0 +1,294 @@
+.evaluation-form-card {
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .search-bar-inner {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem;
+    width: 1600px;
+  }
+  
+  .search-icon {
+    margin-right: 0.5rem;
+    color: #888;
+  }
+  
+  .search-input {
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+  
+  .search-button {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .search-button:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .nav-link.active {
+    position: relative;
+  }
+  
+  .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 2px;
+    background-color: blue;
+  }
+  .user-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+ 
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .user-email {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .user-checkbox {
+    margin-left: 10px;
+  }
+  .font-size-lg {
+    font-size: 16px; /* Adjust the font size as per your preference */
+  }
+  
+  .checkbox-container {
+    margin-left: auto; /* Pushes the checkbox to the right */
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-container input[type="checkbox"] {
+    margin-left: 5px; /* Adjust the spacing between email and checkbox */
+  }
+  .align-middle {
+    vertical-align: middle;
+  }
+  .user-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 400px;
+  }
+  
+  .user-card img {
+    width: 75px;
+    height: 75px;
+    margin-right: 10px;
+  }
+  
+  .user-card .user-email {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .thank-you {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background-color: #f2f2f2;
+  }
+  
+  .thank-you h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .thank-you p {
+    font-size: 18px;
+    color: #666;
+  }
+  .evaluation-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 9998; /* Higher z-index value */
+  }
+  
+  .evaluation-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;
+    z-index: 9999;
+    width: auto; /* Adjust to content width */
+  max-width: 600px; /* Set maximum width if needed */
+
+  }
+  
+  /* Rest of your evaluation-popup styles */
+  
+  .evaluation-popup h2 {
+    margin-top: 0;
+  }
+  
+  .evaluation-popup p {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  
+  .question-wrapper {
+    margin-bottom: 10px;
+  }
+  
+  
+  .answer-line {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .question-wrapper {
+    margin-bottom: 10px;
+  }
+  
+ 
+  
+  .answer-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .answer-line input {
+    margin-left: 10px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Increase margin-top for spacing */
+  }
+  
+  .evaluation-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 110px;
+    
+  }
+  
+  .evaluation-button:first-child {
+    margin-left: 0;
+  }
+  
+  .evaluation-button:hover {
+    background-color: #0069d9;
+  }
+  .evaluation-popup .submit-button {
+    /* Add specific class or selector for the submit button */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    width: auto; /* Set width to auto */
+  }
+  .evaluation-popup .submit-button:hover {
+  background-color: #0069d9;
+}
+.table-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .table-popup h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .result-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+  }
+  
+  .result-table th,
+  .result-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .result-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .result-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .close-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    background-color: #555;
+  }
+  

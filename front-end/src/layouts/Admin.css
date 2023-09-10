@@ -1,0 +1,19 @@
+.breadcrumb-text {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .breadcrumb-text:hover {
+    color: #7a0c90;
+  }
+  
+  .breadcrumb-text::before {
+    content: "/";
+    margin: 0 0.5rem;
+    color: #666;
+  }
+  
+  .breadcrumb-text:first-child::before {
+    content: "";
+  }
+  

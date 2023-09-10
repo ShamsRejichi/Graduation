@@ -1,0 +1,185 @@
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown {
+  position: relative;
+}
+.team-card h1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.create-team-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.create-team-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.create-team-container button:hover {
+  background-color: #0069d9;
+}
+
+.modal {
+  display: none; /* Hide modal by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scrolling if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  overflow: auto;
+  display: flex;
+  min-height: 750px; /* update the value as you wish */
+  max-height: 80vh;
+}
+
+.modal-content label {
+  font-size: 18px;
+  font-weight: bold;
+  
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  height: auto;
+  max-height: none;
+}
+
+.modal-content select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 10.609l4.95-4.95a1 1 0 1 1 1.414 1.414l-5.657 5.657a1 1 0 0 1-1.414 0L2.636 7.073a1 1 0 0 1 1.414-1.414L8 10.61z' fill='%23343a40'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+  background-size: 15px;
+  box-sizing: border-box;
+  height: auto;
+  max-height: none;
+}
+
+.modal-content select::-ms-expand {
+  display: none;
+}
+
+.modal-content input[type="range"] {
+  width: 100%;
+  margin-bottom: 15px;
+}
+body{margin-top:20px;
+  background-color: #f7f7fc;
+  }
+  .card-subtitle, .card-title {
+      font-weight: 400;
+  }
+  .card-title {
+      font-size: .875rem;
+      color: #495057;
+  }
+  .card {
+      margin-bottom: 24px;
+      box-shadow: 0 0 0.875rem 0 rgba(33,37,41,.05);
+  }
+  .card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #fff;
+      background-clip: initial;
+      border: 0 solid transparent;
+      border-radius: .25rem;
+  }
+  .card-body {
+      flex: 1 1 auto;
+      padding: 1.25rem;
+  }
+  .card-header:first-child {
+      border-radius: .25rem .25rem 0 0;
+  }
+  .card-header {
+      border-bottom-width: 1px;
+  }
+  .pb-0 {
+      padding-bottom: 0!important;
+  }
+  .card-header {
+      padding: 1rem 1.25rem;
+      margin-bottom: 0;
+      background-color: #fff;
+      border-bottom: 0 solid transparent;
+  }
+  .progress {
+    height: 8px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  
+  .progress-sm {
+    height: 4px;
+  }
+  
+  .progress-bar {
+    display: block;
+    height: 100%;
+    border-radius: 4px;
+    background-color: #007bff;
+    transition: width 0.6s ease;
+  }
+  
+  .modal2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }

@@ -1,0 +1,11 @@
+CLOUD_INSTANCE="https://login.microsoftonline.com/" # cloud instance string should end with a trailing slash
+TENANT_ID="383b216b-2c16-4c32-bdf0-8649682d2166"
+CLIENT_ID="a4caec21-e51f-4da0-aac9-c169bc25d015"
+CLIENT_SECRET="4a26bd07-4c62-4987-8627-d079b9a10853"
+
+REDIRECT_URI="http://localhost:3000/auth/redirect"
+POST_LOGOUT_REDIRECT_URI="http://localhost:4000"
+
+GRAPH_API_ENDPOINT="https://graph.microsoft.com/" # graph api endpoint string should end with a trailing slash
+
+EXPRESS_SESSION_SECRET="4a26bd07-4c62-4987-8627-d079b9a10853"

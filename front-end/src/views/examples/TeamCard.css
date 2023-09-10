@@ -1,0 +1,493 @@
+.team-card {
+    max-width: 500px;
+    height: 150px;
+    margin: 0 auto;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  .team-card h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #333;
+  }
+  
+  .create-team-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+  }
+  
+  .create-team-container button {
+    background-color: #155cd7;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .create-team-container button:hover {
+    background-color: #555;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  .modal-content select {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+    display: flex;
+    margin:140px;
+    justify-content: center;
+    
+   
+  }
+  
+  .modal-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #333;
+  }
+  
+  .modal-content label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .modal-content input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-content button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 0.5rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .modal-content button:last-of-type {
+    background-color: #aaa;
+  }
+  
+  .modal-content button:hover {
+    background-color: #871313;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .team-card {
+      max-width: 100%;
+    }
+  }
+  .team-list-card {
+    width: 350px;
+    height: 450px;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+  }
+  
+  .team-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .team-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+    
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .dropbtn {
+    background-color: #fff;
+    color: #333;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    background-color: #f1f1f1;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    
+  }
+  
+  .dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .team-content {
+    margin: 1rem 0;
+    
+
+  }
+  .user-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    
+  }
+  .user {
+    flex: 1;
+    padding: 10px 0;
+    
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    margin-right: 8px;
+    text-align: center;
+  }
+  .team-footer {
+    text-align: center;
+  }
+  
+  .edit-users-btn {
+    display: block;
+    margin: 0 auto;
+    background-color: transparent;
+    color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    box-shadow: none !important;
+    outline: none;
+    /* Add more specific rules to override box shadow */
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    /* Add other styles as needed */
+  }
+  
+  .team-content {
+    height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+  }
+  .default-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ccc;
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .team-content .user {
+    display: flex;
+    align-items: center;
+  }
+  
+  .team-content .user img {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .team-content .user span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .team-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
+  
+  
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .popup-content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    max-height: 800px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%; /* Set column widths */
+  }
+  
+  .user-list-container {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid #ccc; /* Add a border on the right for separation */
+    grid-column: 1;
+  }
+  
+  .user-list {
+    max-height: 100%; /* Set max-height to 100% to fill the available height */
+    overflow-y: auto;
+    width: 100%; /* Set width to 100% to fill the available width */
+    height: 100%; /* Set height to 100% to fill the available height */
+    border-radius: 4px;
+    grid-column: 1; /* Set the user-list to start at column 1 */
+  }
+  
+  
+  
+  .team-info-container {
+    padding: 10px;
+  }
+  
+ 
+  /* CSS for Font Awesome "X" icon */
+  .fa-times {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Example styling for the close button container */
+  /* Styles for the close button container */
+  .close-btn {
+    position: absolute;
+    top: 64px;
+    right: 420px;
+    /* Add any additional styles you want for the close button container */
+  }
+  .search-input {
+    width: 100%; /* Set the input width to 100% */
+    grid-column: 1; /* Set the input to start at column 1 */
+    padding-left: 30px;
+  }
+  .input-wrapper {
+    position: relative;
+  }
+  .fa-search {
+    position: absolute;
+    top: 50%;
+    left: 10px; /* Adjust the left position as needed */
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevent the icon from interfering with input interaction */
+  }
+ 
+  
+  
+  /* CSS styles for Font Awesome arrow-right icon */
+.fa-arrow-right {
+  color: blue; /* 
+  Set color to blue */
+   /* Set background color to light blue */
+  border-radius: 50%; /* Set border radius to 50% for a circle shape */
+  padding: 10px; /* Add padding to adjust icon size */
+  top: 0; /* Position the arrow at the top */
+  right: 0px;
+  position: relative;
+}
+
+.team{
+  border-top: 1px solid #e6e6e6;
+padding-bottom: 60px;
+}
+.panel-shadow{
+  box-shadow: rgba(0, 0, 0, 0.3) 7px 7px 7px;
+}
+.team .team-member{
+margin-top: 20px;
+margin-bottom: 30px;
+}
+
+.team .team-member img{
+max-width: 55px;
+float: left;
+border: 1px solid #f5f5f5;
+border-radius: 5px;
+}
+
+.team .team-member .member-details{
+margin-left: 65px;
+}
+
+.team .team-member .member-details h4{
+margin: 0;
+margin-bottom: 3px;
+padding-top: 9px;
+font-size: 14px;
+font-weight: bold;
+}
+
+.team .team-member .member-details h4 a{
+color: #787878;
+}
+
+.team .team-member .member-details span{
+display: block;
+margin-bottom: 2px;
+font-size: 12px;
+color: #aaaaaa;
+}			              
+.custom-bg {
+background-color: #acf0ef; /* Custom background color */
+}
+.dropdown {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.team-popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  
+}
+
+.team-popup-close {
+  
+  top: 0;
+  right: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.team-popup-close:hover {
+  color: red;
+ 
+}
+
+.team-popup-content h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.team-popup-content label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.team-popup-content input,
+.team-popup-content textarea,
+.team-popup-content select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.team-popup-content button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.team-popup-content button:hover {
+  background-color: #45a049;
+}
+.team-popup-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+

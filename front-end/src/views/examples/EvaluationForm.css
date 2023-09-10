@@ -1,0 +1,104 @@
+.evaluation-form {
+    max-width: 400px;
+    margin: 0 auto;
+   
+    background-color: #f5f5f5;
+    border-radius: 5px;
+  }
+  
+  .evaluation-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .evaluation-form form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .evaluation-form form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .evaluation-form form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .evaluation-form form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .evaluation-form form button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  .evaluation-form input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .evaluation-form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .evaluation-form button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .evaluation-form .rating-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .evaluation-form .rating-scale {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .evaluation-form .rating-scale label {
+    width: 20px;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+  }
+  
+  .evaluation-form .rating-scale label:hover {
+    color: #333;
+  }
+  .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #888;
+  }
+  
+  .evaluation-form .rating-scale label.active {
+    color: #007bff;
+    font-weight: bold;
+  }
